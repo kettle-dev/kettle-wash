@@ -5,7 +5,7 @@ RSpec.describe Kettle::Wash do
     expect(Kettle::Wash::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "defines a domain error type" do
+    expect(Kettle::Wash::Error).to be < StandardError
   end
 end
