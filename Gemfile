@@ -1,11 +1,21 @@
 # frozen_string_literal: true
 
+# kettle-jem:freeze
+# To retain chunks of comments & code during kettle-wash templating:
+# Wrap custom sections with freeze markers (e.g., as above and below this comment chunk).
+# kettle-wash will then preserve content between those markers across template runs.
+# kettle-jem:unfreeze
+
 source "https://gem.coop"
 git_source(:codeberg) { |repo_name| "https://codeberg.org/#{repo_name}" }
 git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 
 
-# Include dependencies from {KJ|GEM_NAME}.gemspec
+#### IMPORTANT #######################################################
+# Gemfile is for local development ONLY; Gemfile is NOT loaded in CI #
+####################################################### IMPORTANT ####
+
+# Include dependencies from kettle-wash.gemspec
 gemspec
 
 # See unlocked_deps appraisal for more details on irb inclusion
