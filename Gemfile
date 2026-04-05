@@ -7,6 +7,7 @@
 # kettle-jem:unfreeze
 
 source "https://gem.coop"
+
 git_source(:codeberg) { |repo_name| "https://codeberg.org/#{repo_name}" }
 git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 
@@ -17,6 +18,7 @@ git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 
 # Include dependencies from kettle-wash.gemspec
 gemspec
+
 
 # See unlocked_deps appraisal for more details on irb inclusion
 gem "irb", "~> 1.17" # ruby >= 2.7

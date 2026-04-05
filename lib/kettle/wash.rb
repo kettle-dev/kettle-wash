@@ -2,6 +2,7 @@
 
 require "version_gem"
 require_relative "wash/version"
+
 Kettle::Wash::Version.class_eval do
   extend VersionGem::Basic
 end
