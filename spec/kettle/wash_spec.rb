@@ -2,7 +2,7 @@
 
 RSpec.describe Kettle::Wash do
   it "has a version number" do
-    expect(Kettle::Wash::VERSION).not_to be nil
+    expect(Kettle::Wash::VERSION).not_to be_nil
   end
 
   it "defines a domain error type" do
