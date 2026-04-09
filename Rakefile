@@ -71,7 +71,6 @@ require "rubocop/rake_task"
 
 RuboCop::RakeTask.new
 
-
 # External gems that define tasks - add here!
 require "kettle/dev"
 
