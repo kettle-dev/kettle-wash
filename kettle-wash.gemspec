@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Peter H. Boling"]
   spec.email = ["peter.boling@gmail.com"]
 
-  spec.summary = "🍲 TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "🍲 TODO: Write a longer description or delete this line."
+  spec.summary = "🫧 TODO: Write a short summary, because RubyGems requires one."
+  spec.description = "🫧 TODO: Write a longer description or delete this line."
   spec.homepage = "https://github.com/kettle-rb/kettle-wash"
   spec.licenses = ["AGPL-3.0-only", "PolyForm-Small-Business-1.0.0", "LicenseRef-Big-Time-Public-License"]
   spec.required_ruby_version = ">= 3.2.0"
@@ -36,7 +36,6 @@ Gem::Specification.new do |spec|
     end
   end
 
-
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
   spec.metadata["homepage_uri"] = "https://kettle-wash.galtzo.com/"
   spec.metadata["source_code_uri"] = "#{spec.homepage}/tree/v#{spec.version}"
@@ -48,7 +47,6 @@ Gem::Specification.new do |spec|
   spec.metadata["news_uri"] = "https://www.railsbling.com/tags/#{spec.name}"
   spec.metadata["discord_uri"] = "https://discord.gg/3qme4XHNKN"
   spec.metadata["rubygems_mfa_required"] = "true"
-
 
   # Specify which files are part of the released package.
   spec.files = Dir[
