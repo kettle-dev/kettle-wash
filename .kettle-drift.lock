@@ -1,0 +1,158 @@
+{
+  "#       strategy: merge\n#       file_type: ruby": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        231,
+        254
+      ]
+    }
+  ],
+  "#     commit-msg:\n#       strategy: merge": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        230,
+        253
+      ]
+    }
+  ],
+  "#     pboling.pem:\n#       strategy: raw_copy": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        226,
+        249
+      ]
+    }
+  ],
+  "#     preference: destination\n#     add_template_only_nodes: false": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        236,
+        259
+      ]
+    }
+  ],
+  "#     strategy: merge\n#     preference: destination": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        235,
+        258
+      ]
+    }
+  ],
+  "#   .git-hooks:\n#     commit-msg:": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        229,
+        252
+      ]
+    }
+  ],
+  "#   README.md:\n#     strategy: accept_template": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        219,
+        242
+      ]
+    }
+  ],
+  "#   Rakefile:\n#     strategy: merge": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        234,
+        257
+      ]
+    }
+  ],
+  "#   SECURITY.md:\n#     strategy: keep_destination": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        222,
+        245
+      ]
+    }
+  ],
+  "#   certs:\n#     pboling.pem:": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        225,
+        248
+      ]
+    }
+  ],
+  "# files:\n#   README.md:": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        218,
+        241
+      ]
+    }
+  ],
+  "appraisal: \"dep-heads\"\nexec_cmd: \"rake spec\"": [
+    {
+      "file": ".github/workflows/dep-heads.yml",
+      "lines": [
+        44,
+        52,
+        60
+      ]
+    }
+  ],
+  "appraisal: \"head\"\nexec_cmd: \"rake test\"": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        43,
+        51,
+        59
+      ]
+    }
+  ],
+  "exec_cmd: \"rake spec\"\ngemfile: \"Appraisal.root\"": [
+    {
+      "file": ".github/workflows/dep-heads.yml",
+      "lines": [
+        45,
+        53,
+        61
+      ]
+    }
+  ],
+  "exec_cmd: \"rake test\"\ngemfile: \"Appraisal.root\"": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        44,
+        52,
+        60
+      ]
+    }
+  ],
+  "gemfile: \"Appraisal.root\"\nrubygems: default": [
+    {
+      "file": ".github/workflows/dep-heads.yml",
+      "lines": [
+        54,
+        62
+      ]
+    },
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        45,
+        53,
+        61
+      ]
+    }
+  ]
+}
