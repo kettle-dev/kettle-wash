@@ -28,6 +28,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Updated generated project metadata links to use the migrated `kettle-dev`
+  GitHub organization.
+
 ### Security
 
 ## [0.1.0] - 2025-08-15

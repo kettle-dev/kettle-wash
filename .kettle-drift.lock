@@ -3,8 +3,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        231,
-        254
+        427,
+        450
       ]
     }
   ],
@@ -12,8 +12,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        230,
-        253
+        426,
+        449
       ]
     }
   ],
@@ -21,8 +21,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        226,
-        249
+        422,
+        445
       ]
     }
   ],
@@ -30,8 +30,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        236,
-        259
+        432,
+        455
       ]
     }
   ],
@@ -39,8 +39,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        235,
-        258
+        431,
+        454
       ]
     }
   ],
@@ -48,8 +48,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        229,
-        252
+        425,
+        448
       ]
     }
   ],
@@ -57,8 +57,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        219,
-        242
+        415,
+        438
       ]
     }
   ],
@@ -66,8 +66,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        234,
-        257
+        430,
+        453
       ]
     }
   ],
@@ -75,8 +75,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        222,
-        245
+        418,
+        441
       ]
     }
   ],
@@ -84,8 +84,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        225,
-        248
+        421,
+        444
       ]
     }
   ],
@@ -93,65 +93,45 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        218,
-        241
+        414,
+        437
       ]
     }
   ],
-  "appraisal: \"dep-heads\"\nexec_cmd: \"rake spec\"": [
+  "appraisal: \"dep-heads\"\nexec_cmd: \"kettle-test\"": [
     {
       "file": ".github/workflows/dep-heads.yml",
       "lines": [
         44,
-        52,
-        60
+        51,
+        58
       ]
     }
   ],
-  "appraisal: \"head\"\nexec_cmd: \"rake test\"": [
+  "appraisal: \"head\"\nexec_cmd: \"kettle-test\"": [
     {
       "file": ".github/workflows/heads.yml",
       "lines": [
         43,
-        51,
-        59
+        50,
+        57
       ]
     }
   ],
-  "exec_cmd: \"rake spec\"\ngemfile: \"Appraisal.root\"": [
+  "exec_cmd: \"kettle-test\"\nrubygems: default": [
     {
       "file": ".github/workflows/dep-heads.yml",
       "lines": [
-        45,
-        53,
-        61
-      ]
-    }
-  ],
-  "exec_cmd: \"rake test\"\ngemfile: \"Appraisal.root\"": [
-    {
-      "file": ".github/workflows/heads.yml",
-      "lines": [
-        44,
         52,
-        60
-      ]
-    }
-  ],
-  "gemfile: \"Appraisal.root\"\nrubygems: default": [
-    {
-      "file": ".github/workflows/dep-heads.yml",
-      "lines": [
-        54,
-        62
+        59
       ]
     },
     {
       "file": ".github/workflows/heads.yml",
       "lines": [
-        45,
-        53,
-        61
+        44,
+        51,
+        58
       ]
     }
   ]
