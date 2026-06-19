@@ -19,7 +19,8 @@ git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 gemspec
 
 # Local workspace dependency wiring for *_local.gemfile overrides
-gem "nomono", "~> 1.0", ">= 1.0.2", require: false # ruby >= 2.2
+gem "nomono", "~> 1.0", ">= 1.0.4", require: false # ruby >= 2.2
+
 # See unlocked_deps appraisal for more details on irb inclusion
 gem "irb", "~> 1.17" # ruby >= 2.7
 

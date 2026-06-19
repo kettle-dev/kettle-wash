@@ -5,7 +5,7 @@
 
 require "nomono/bundler" unless defined?(Nomono)
 
-local_gems = %w[kettle-dev kettle-test kettle-soup-cover]
+local_gems = %w[kettle-dev kettle-test kettle-soup-cover kettle-drift]
 declared_gems = instance_variable_get(:@dependencies).to_a.map(&:name)
 local_gems_to_eval = local_gems - %w[kettle-wash] - declared_gems
 
