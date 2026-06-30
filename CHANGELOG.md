@@ -36,6 +36,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - Updated generated project metadata links to use the migrated `kettle-dev`
   GitHub organization.
 
+- Package configured license files in gem release file lists.
+
 ### Security
 
 ## [0.1.0] - 2025-08-15
