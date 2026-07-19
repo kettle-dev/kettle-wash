@@ -20,6 +20,26 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [0.1.0] - 2026-07-19
+
+- TAG: [v0.1.0][0.1.0t]
+- COVERAGE: 100.00% -- 63/63 lines in 2 files
+- BRANCH COVERAGE: 86.36% -- 19/22 branches in 2 files
+- 20.00% documented
+- Initial release
+
+### Added
+
 - Added support for JRuby 10.1 and TruffleRuby 34.0.
 - Added public constant deletion and reset helpers for test and reload workflows.
 - Added `Kettle::Wash::Change`, an include-based helper for modules that need
@@ -43,10 +63,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260716-002 - Generated gemspec manifests now ship fewer
   repository-only files by default to reduce downstream distro packaging churn.
 
-### Deprecated
-
-### Removed
-
 ### Fixed
 
 - Corrected OpenCollective funding metadata to use the `kettle-dev` collective.
@@ -55,8 +71,6 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Package configured license files in gem release file lists.
 
-### Security
-
-## [0.1.0] - 2025-08-15
-
-- Initial release
+[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/kettle-dev/kettle-wash/compare/9819b1c14789cdd16131ddf8f131a436f702fd4e...v0.1.0
+[0.1.0t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.0
