@@ -29,6 +29,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Documented the primary coverage use case for reloading constants whose values
   are conditionally derived from `ENV`.
+- Added RSpec usage documentation with a link to the `kettle-soup-cover`
+  constant reset specs.
 
 - Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
 

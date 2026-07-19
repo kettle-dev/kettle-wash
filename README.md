@@ -174,6 +174,50 @@ MyGem::Constants.reset_const do
 end
 ```
 
+### RSpec Example
+
+In specs, wrap the environment mutation inside `reset_const`. The constants are
+deleted before the block runs, then the configured file is loaded again after
+the block finishes.
+
+```ruby
+RSpec.describe MyGem::Constants do
+  around do |example|
+    original = ENV.fetch("MY_GEM_VALUE", nil)
+    example.run
+  ensure
+    if original.nil?
+      ENV.delete("MY_GEM_VALUE")
+    else
+      ENV["MY_GEM_VALUE"] = original
+    end
+    described_class.reset_const
+  end
+
+  it "uses the default value" do
+    described_class.reset_const do
+      ENV.delete("MY_GEM_VALUE")
+    end
+
+    expect(described_class::VALUE).to eq("default")
+  end
+
+  it "uses the configured value" do
+    described_class.reset_const do
+      ENV["MY_GEM_VALUE"] = "configured"
+    end
+
+    expect(described_class::VALUE).to eq("configured")
+  end
+end
+```
+
+That shape lets SimpleCov see both examples execute the actual constant
+definition line. For a production use, see
+[`kettle-soup-cover`'s constants specs](https://github.com/kettle-dev/kettle-soup-cover/blob/main/spec/kettle/soup/cover/constants_spec.rb),
+which reset `Kettle::Soup::Cover::Constants` under different `K_SOUP_COV_*`
+environment values to cover branch-heavy constant definitions.
+
 ## 🔐 Security
 
 See [SECURITY.md][🔐security].
