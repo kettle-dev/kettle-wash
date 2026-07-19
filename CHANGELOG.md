@@ -21,6 +21,9 @@ Please file a bug if you notice a violation of semantic versioning.
 ### Added
 
 - Added support for JRuby 10.1 and TruffleRuby 34.0.
+- Added public constant deletion and reset helpers for test and reload workflows.
+- Added `Kettle::Wash::Change`, an include-based helper for modules that need
+  `delete_const` and `reset_const` singleton methods.
 
 ### Changed
 

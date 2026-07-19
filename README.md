@@ -120,7 +120,40 @@ gem install kettle-wash
 
 ## ⚙️ Configuration
 
+There is no global configuration. Each consumer declares the constants it owns
+and the file that can rebuild them.
+
 ## 🔧 Basic Usage
+
+Use `Kettle::Wash::Change` when a module has constants derived from environment
+or runtime state and specs need to reset those constants between examples.
+
+```ruby
+require "kettle/wash"
+
+module MyGem
+  module Constants
+    VALUE = ENV.fetch("MY_GEM_VALUE", "default")
+
+    include Kettle::Wash::Change.new(
+      constants: %w[
+        VALUE
+      ],
+      path: "my_gem/constants.rb"
+    )
+  end
+end
+```
+
+The generated singleton methods remove only the declared constants:
+
+```ruby
+MyGem::Constants.delete_const
+
+MyGem::Constants.reset_const do
+  ENV["MY_GEM_VALUE"] = "changed"
+end
+```
 
 ## 🔐 Security
 
@@ -187,7 +220,7 @@ For most applications, prefer the [Pessimistic Version Constraint][📌pvc] with
 For example:
 
 ```ruby
-spec.add_dependency("kettle-wash", "~> 0.0")
+spec.add_dependency("kettle-wash", "~> 0.1", ">= 0.1.0")
 ```
 
 <details markdown="1">
@@ -441,7 +474,7 @@ Thanks for RTFM. ☺️
 | Field | Value |
 |---|---|
 | Package | kettle-wash |
-| Description | 🚿 TODO: Write a longer description or delete this line. |
+| Description | 🚿 Constant deletion and reset helpers for gems that need repeatable reloads while testing constant-backed runtime configuration. |
 | Homepage | https://github.com/kettle-dev/kettle-wash |
 | Source | https://github.com/kettle-dev/kettle-wash |
 | License | `AGPL-3.0-only` OR `PolyForm-Small-Business-1.0.0` OR `LicenseRef-Big-Time-Public-License` |

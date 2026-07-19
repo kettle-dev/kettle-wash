@@ -1,136 +1,24 @@
 module Kettle
   module Wash
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+    VERSION: String
+
+    def self.delete_constants: (Module owner, String | Symbol | Array[String | Symbol] constants) -> nil
+    def self.reset_constants: (owner: Module, constants: String | Symbol | Array[String | Symbol], path: String) -> nil
+
+    class Error < StandardError
+    end
+
+    class Change < Module
+      def initialize: (?constants: nil | String | Symbol | Array[String | Symbol], ?path: nil | String) -> void
+      def included: (Module base) -> nil
+
+      module ConstantChange
+        def self.to_mod: (constants: Array[String | Symbol], path: String) -> Module
+      end
+    end
+
     module Version
       VERSION: String
     end
-    VERSION: String
   end
 end

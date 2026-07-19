@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Peter H. Boling"]
   spec.email = ["floss@galtzo.com"]
 
-  spec.summary = "🚿 TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "🚿 TODO: Write a longer description or delete this line."
+  spec.summary = "🚿 Constant unloading helpers for Ruby test and reload workflows."
+  spec.description = "🚿 Constant deletion and reset helpers for gems that need repeatable reloads while testing constant-backed runtime configuration."
   spec.homepage = "https://github.com/kettle-dev/kettle-wash"
   spec.licenses = ["AGPL-3.0-only", "PolyForm-Small-Business-1.0.0", "LicenseRef-Big-Time-Public-License"]
   spec.required_ruby_version = ">= 3.2.0"
