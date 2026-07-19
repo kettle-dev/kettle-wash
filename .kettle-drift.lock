@@ -3,8 +3,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        429,
-        452
+        431,
+        454
       ]
     }
   ],
@@ -12,8 +12,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        428,
-        451
+        430,
+        453
       ]
     }
   ],
@@ -21,12 +21,48 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        424,
-        447
+        426,
+        449
       ]
     }
   ],
   "#     preference: destination\n#     add_template_only_nodes: false": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        436,
+        459
+      ]
+    }
+  ],
+  "#     strategy: merge\n#     preference: destination": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        435,
+        458
+      ]
+    }
+  ],
+  "#   .git-hooks:\n#     commit-msg:": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        429,
+        452
+      ]
+    }
+  ],
+  "#   README.md:\n#     strategy: accept_template": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        419,
+        442
+      ]
+    }
+  ],
+  "#   Rakefile:\n#     strategy: merge": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
@@ -35,48 +71,12 @@
       ]
     }
   ],
-  "#     strategy: merge\n#     preference: destination": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        433,
-        456
-      ]
-    }
-  ],
-  "#   .git-hooks:\n#     commit-msg:": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        427,
-        450
-      ]
-    }
-  ],
-  "#   README.md:\n#     strategy: accept_template": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        417,
-        440
-      ]
-    }
-  ],
-  "#   Rakefile:\n#     strategy: merge": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        432,
-        455
-      ]
-    }
-  ],
   "#   SECURITY.md:\n#     strategy: keep_destination": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        420,
-        443
+        422,
+        445
       ]
     }
   ],
@@ -84,8 +84,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        423,
-        446
+        425,
+        448
       ]
     }
   ],
@@ -93,8 +93,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        416,
-        439
+        418,
+        441
       ]
     }
   ],
@@ -103,8 +103,8 @@
       "file": ".github/workflows/dep-heads.yml",
       "lines": [
         44,
-        51,
-        58
+        105,
+        154
       ]
     }
   ],
@@ -113,25 +113,18 @@
       "file": ".github/workflows/heads.yml",
       "lines": [
         43,
-        50,
-        57
+        104,
+        162
       ]
     }
   ],
   "exec_cmd: \"kettle-test\"\nrubygems: default": [
     {
-      "file": ".github/workflows/dep-heads.yml",
-      "lines": [
-        52,
-        59
-      ]
-    },
-    {
       "file": ".github/workflows/heads.yml",
       "lines": [
         44,
-        51,
-        58
+        105,
+        163
       ]
     }
   ]
