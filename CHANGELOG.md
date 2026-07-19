@@ -31,6 +31,8 @@ Please file a bug if you notice a violation of semantic versioning.
   are conditionally derived from `ENV`.
 - Added RSpec usage documentation with a link to the `kettle-soup-cover`
   constant reset specs.
+- Updated the RSpec usage example to use `rspec-stubbed_env` instead of
+  mutating the real process environment.
 
 - Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
 

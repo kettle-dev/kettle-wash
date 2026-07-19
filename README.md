@@ -176,27 +176,21 @@ end
 
 ### RSpec Example
 
-In specs, wrap the environment mutation inside `reset_const`. The constants are
-deleted before the block runs, then the configured file is loaded again after
-the block finishes.
+In specs, use `stub_env` from
+[`rspec-stubbed_env`](https://github.com/galtzo-floss/rspec-stubbed_env) inside
+`reset_const`. The constants are deleted before the block runs, then the
+configured file is loaded again after the block finishes. This avoids modifying
+the real process environment.
 
 ```ruby
+require "rspec/stubbed_env"
+
 RSpec.describe MyGem::Constants do
-  around do |example|
-    original = ENV.fetch("MY_GEM_VALUE", nil)
-    example.run
-  ensure
-    if original.nil?
-      ENV.delete("MY_GEM_VALUE")
-    else
-      ENV["MY_GEM_VALUE"] = original
-    end
-    described_class.reset_const
-  end
+  include_context "with stubbed env"
 
   it "uses the default value" do
     described_class.reset_const do
-      ENV.delete("MY_GEM_VALUE")
+      stub_env("MY_GEM_VALUE" => nil)
     end
 
     expect(described_class::VALUE).to eq("default")
@@ -204,7 +198,7 @@ RSpec.describe MyGem::Constants do
 
   it "uses the configured value" do
     described_class.reset_const do
-      ENV["MY_GEM_VALUE"] = "configured"
+      stub_env("MY_GEM_VALUE" => "configured")
     end
 
     expect(described_class::VALUE).to eq("configured")
