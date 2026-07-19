@@ -24,6 +24,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - Added public constant deletion and reset helpers for test and reload workflows.
 - Added `Kettle::Wash::Change`, an include-based helper for modules that need
   `delete_const` and `reset_const` singleton methods.
+- Added `Kettle::Wash.install` and `Kettle::Wash.validate!` for gems that
+  declare washable constant contracts without loading `kettle-wash` at runtime.
 
 ### Changed
 

@@ -277,7 +277,7 @@ For most applications, prefer the [Pessimistic Version Constraint][📌pvc] with
 For example:
 
 ```ruby
-spec.add_dependency("kettle-wash", "~> 0.0")
+spec.add_dependency("kettle-wash", "~> 0.1")
 ```
 
 <details markdown="1">

@@ -15,6 +15,58 @@ RSpec.describe Kettle::Wash do
     expect(Kettle::Wash::Error).to be < StandardError
   end
 
+  describe "::install" do
+    it "adds reset helpers from a structured config" do
+      base = Module.new
+      path = write_tmp_file("Kettle::WashInstallSpecModule.const_set(:EXAMPLE, \"reset\")\n")
+      stub_const("Kettle::WashInstallSpecModule", base)
+
+      described_class.install(base, constants: %w[EXAMPLE], path: path)
+
+      expect(base).to respond_to(:reset_const)
+      expect(base).to respond_to(:delete_const)
+    end
+
+    it "accepts a config hash" do
+      base = Module.new
+      path = write_tmp_file("Kettle::WashInstallHashSpecModule.const_set(:EXAMPLE, \"reset\")\n")
+      stub_const("Kettle::WashInstallHashSpecModule", base)
+
+      described_class.install(base, {constants: %w[EXAMPLE], path: path})
+      base.reset_const
+
+      expect(base.const_get(:EXAMPLE)).to eq("reset")
+    end
+  end
+
+  describe "::validate!" do
+    it "returns true when configured constants exist and the path is readable" do
+      owner = Module.new
+      owner.const_set(:EXAMPLE, "value")
+      path = write_tmp_file("")
+
+      expect(described_class.validate!(owner, constants: %w[EXAMPLE], path: path)).to be(true)
+    end
+
+    it "fails closed when a configured constant is missing" do
+      owner = Module.new
+      path = write_tmp_file("")
+
+      expect {
+        described_class.validate!(owner, constants: %w[MISSING], path: path)
+      }.to raise_error(Kettle::Wash::Error, "Missing washable constant(s): MISSING")
+    end
+
+    it "fails closed when the configured path is missing" do
+      owner = Module.new
+      owner.const_set(:EXAMPLE, "value")
+
+      expect {
+        described_class.validate!(owner, constants: %w[EXAMPLE], path: "tmp/missing.rb")
+      }.to raise_error(Kettle::Wash::Error, "Washable constants path does not exist: tmp/missing.rb")
+    end
+  end
+
   describe "::delete_constants" do
     it "removes configured constants from an owner module" do
       owner = Module.new

@@ -12,6 +12,21 @@ module Kettle
     class Error < StandardError; end
 
     class << self
+      def install(owner, config = nil, constants: nil, path: nil)
+        constants, path = normalize_config(config, constants: constants, path: path)
+        owner.extend(Change::ConstantChange.to_mod(constants: constants, path: path))
+        nil
+      end
+
+      def validate!(owner, config = nil, constants: nil, path: nil)
+        constants, path = normalize_config(config, constants: constants, path: path)
+        missing = constants.reject { |constant_name| owner.const_defined?(constant_name, false) }
+        raise Error, "Missing washable constant(s): #{missing.join(", ")}" unless missing.empty?
+        raise Error, "Washable constants path does not exist: #{path}" unless File.file?(path)
+
+        true
+      end
+
       def delete_constants(owner, constants)
         Array(constants).each do |constant_name|
           owner.send(:remove_const, constant_name) if owner.const_defined?(constant_name, false)
@@ -23,6 +38,22 @@ module Kettle
         delete_constants(owner, constants)
         load(path)
         nil
+      end
+
+      private
+
+      def normalize_config(config, constants:, path:)
+        config ||= {}
+        if config.respond_to?(:fetch)
+          constants ||= config.fetch(:constants) { config.fetch("constants", nil) }
+          path ||= config.fetch(:path) { config.fetch("path", nil) }
+        end
+
+        constants = Array(constants)
+        raise Error, "No washable constants configured" if constants.empty?
+        raise Error, "No washable constants path configured" if path.nil? || path.to_s.empty?
+
+        [constants, path.to_s]
       end
     end
 

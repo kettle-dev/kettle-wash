@@ -1,6 +1,8 @@
 module Kettle
   module Wash
     VERSION: String
+    def self.install: (Module owner, ?Hash[Symbol | String, untyped] config, ?constants: String | Symbol | Array[String | Symbol], ?path: String) -> nil
+    def self.validate!: (Module owner, ?Hash[Symbol | String, untyped] config, ?constants: String | Symbol | Array[String | Symbol], ?path: String) -> true
     def self.delete_constants: (Module owner, String | Symbol | Array[String | Symbol] constants) -> nil
     def self.reset_constants: (owner: Module, constants: String | Symbol | Array[String | Symbol], path: String) -> nil
     class Error < StandardError
