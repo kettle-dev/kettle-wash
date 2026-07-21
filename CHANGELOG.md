@@ -22,6 +22,23 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [0.1.1] - 2026-07-21
+
+- TAG: [v0.1.1][0.1.1t]
+- COVERAGE: 100.00% -- 63/63 lines in 2 files
+- BRANCH COVERAGE: 86.36% -- 19/22 branches in 2 files
+- 20.00% documented
+
+### Changed
+
 - kettle-jem-template-20260720-001 - Generated READMEs can now render
   template-managed corporate sponsor logos from project or family config.
 - kettle-jem-template-20260720-002 - Generated development Gemfiles now use the
@@ -32,14 +49,6 @@ Please file a bug if you notice a violation of semantic versioning.
   omit JRuby and TruffleRuby jobs when project config declares MRI-only engines.
 - kettle-jem-template-20260720-005 - Generated README Support & Community rows
   now include a RubyForum help badge.
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 
 ## [0.1.0] - 2026-07-19
 
@@ -82,6 +91,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Package configured license files in gem release file lists.
 
-[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.0...v0.1.1
+[0.1.1t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.1
 [0.1.0]: https://github.com/kettle-dev/kettle-wash/compare/9819b1c14789cdd16131ddf8f131a436f702fd4e...v0.1.0
 [0.1.0t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.0
