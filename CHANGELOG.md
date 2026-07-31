@@ -20,15 +20,28 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
-- kettle-jem-template-20260729-005 - Gemspec metadata now publishes this
-  project's RubyForum tag as `mailing_list_uri`, and support docs link to the
-  tagged RubyForum community alongside Discord.
-
 ### Changed
 
 ### Deprecated
 
 ### Removed
+
+### Fixed
+
+### Security
+
+## [0.1.3] - 2026-07-31
+
+- TAG: [v0.1.3][0.1.3t]
+- COVERAGE: 100.00% -- 63/63 lines in 2 files
+- BRANCH COVERAGE: 86.36% -- 19/22 branches in 2 files
+- 33.33% documented
+
+### Added
+
+- kettle-jem-template-20260729-005 - Gemspec metadata now publishes this
+  project's RubyForum tag as `mailing_list_uri`, and support docs link to the
+  tagged RubyForum community alongside Discord.
 
 ### Fixed
 
@@ -51,8 +64,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260730-001 - Gemspec package file enumeration now runs
   relative to the gemspec directory, so release package contents stay correct
   even when the gemspec is loaded from another working directory.
-
-### Security
 
 ## [0.1.2] - 2026-07-28
 
@@ -158,7 +169,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Package configured license files in gem release file lists.
 
-[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.2...v0.1.3
+[0.1.3t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.3
 [0.1.2]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.1...v0.1.2
 [0.1.2t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.2
 [0.1.1]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.0...v0.1.1
