@@ -3,10 +3,6 @@
 require "version_gem"
 require_relative "wash/version"
 
-Kettle::Wash::Version.class_eval do
-  extend VersionGem::Basic
-end
-
 module Kettle
   module Wash
     class Error < StandardError; end
@@ -94,4 +90,8 @@ module Kettle
       end
     end
   end
+end
+
+Kettle::Wash::Version.class_eval do
+  extend VersionGem::Basic
 end
