@@ -28,10 +28,19 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+### Security
+
+## [0.1.5] - 2026-08-03
+
+- TAG: [v0.1.5][0.1.5t]
+- COVERAGE: 100.00% -- 63/63 lines in 2 files
+- BRANCH COVERAGE: 86.36% -- 19/22 branches in 2 files
+- 33.33% documented
+
+### Fixed
+
 - kettle-jem-template-20260802-001 - Devcontainer JSON files now merge as JSONC,
   preserving comments and trailing commas during template updates.
-
-### Security
 
 ## [0.1.4] - 2026-08-01
 
@@ -176,7 +185,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Package configured license files in gem release file lists.
 
-[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.4...HEAD
+[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.5...HEAD
+[0.1.5]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.4...v0.1.5
+[0.1.5t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.5
 [0.1.4]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.3...v0.1.4
 [0.1.4t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.4
 [0.1.3]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.2...v0.1.3
