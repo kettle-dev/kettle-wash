@@ -258,15 +258,15 @@
       <pre class="lines">
 
 
+26
+27
+28
+29
 30
-31
-32
-33
-34
-35</pre>
+31</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/kettle/wash.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/kettle/wash.rb', line 26</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_constants'>delete_constants</span><span class='lparen'>(</span><span class='id identifier rubyid_owner'>owner</span><span class='comma'>,</span> <span class='id identifier rubyid_constants'>constants</span><span class='rparen'>)</span>
   <span class='const'>Array</span><span class='lparen'>(</span><span class='id identifier rubyid_constants'>constants</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_constant_name'>constant_name</span><span class='op'>|</span>
@@ -294,14 +294,14 @@
       <pre class="lines">
 
 
-15
-16
-17
-18
-19</pre>
+11
+12
+13
+14
+15</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/kettle/wash.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'lib/kettle/wash.rb', line 11</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_install'>install</span><span class='lparen'>(</span><span class='id identifier rubyid_owner'>owner</span><span class='comma'>,</span> <span class='id identifier rubyid_config'>config</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>constants:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>path:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_constants'>constants</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='id identifier rubyid_normalize_config'>normalize_config</span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='comma'>,</span> <span class='label'>constants:</span> <span class='id identifier rubyid_constants'>constants</span><span class='comma'>,</span> <span class='label'>path:</span> <span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
@@ -328,14 +328,14 @@
       <pre class="lines">
 
 
-37
-38
-39
-40
-41</pre>
+33
+34
+35
+36
+37</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/kettle/wash.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'lib/kettle/wash.rb', line 33</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reset_constants'>reset_constants</span><span class='lparen'>(</span><span class='label'>owner:</span><span class='comma'>,</span> <span class='label'>constants:</span><span class='comma'>,</span> <span class='label'>path:</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_constants'>delete_constants</span><span class='lparen'>(</span><span class='id identifier rubyid_owner'>owner</span><span class='comma'>,</span> <span class='id identifier rubyid_constants'>constants</span><span class='rparen'>)</span>
@@ -385,17 +385,17 @@
       <pre class="lines">
 
 
+17
+18
+19
+20
 21
 22
 23
-24
-25
-26
-27
-28</pre>
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/kettle/wash.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'lib/kettle/wash.rb', line 17</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_validate!'>validate!</span><span class='lparen'>(</span><span class='id identifier rubyid_owner'>owner</span><span class='comma'>,</span> <span class='id identifier rubyid_config'>config</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>constants:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>path:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_constants'>constants</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='id identifier rubyid_normalize_config'>normalize_config</span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='comma'>,</span> <span class='label'>constants:</span> <span class='id identifier rubyid_constants'>constants</span><span class='comma'>,</span> <span class='label'>path:</span> <span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
