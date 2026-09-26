@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [0.1.8] - 2026-09-26
+
+- TAG: [v0.1.8][0.1.8t]
+- COVERAGE: 100.00% -- 63/63 lines in 2 files
+- BRANCH COVERAGE: 86.36% -- 19/22 branches in 2 files
+- 33.33% documented
+
+### Added
+
 - kettle-jem-template-20260913-001 - Templating now also surfaces a review
   entry in `dependency_conflicts.resolve` when a direct development
   dependency doesn't support one or more of this project's declared
@@ -37,14 +56,6 @@ Please file a bug if you notice a violation of semantic versioning.
   - dependencies (1)
   - other (1)
   - workflows (18)
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 
 ## [0.1.7] - 2026-09-14
 
@@ -238,7 +249,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Package configured license files in gem release file lists.
 
-[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.7...HEAD
+[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.8...HEAD
+[0.1.8]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.7...v0.1.8
+[0.1.8t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.8
 [0.1.7]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.6...v0.1.7
 [0.1.7t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.7
 [0.1.6]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.5...v0.1.6
