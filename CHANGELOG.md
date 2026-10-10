@@ -22,6 +22,23 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [0.1.10] - 2026-10-10
+
+- TAG: [v0.1.10][0.1.10t]
+- COVERAGE: 100.00% -- 63/63 lines in 2 files
+- BRANCH COVERAGE: 86.36% -- 19/22 branches in 2 files
+- 33.33% documented
+
+### Changed
+
 - [kc] kettle-jem/prepare: updated 12 project files:
   - dependencies (12)
 
@@ -31,14 +48,6 @@ Please file a bug if you notice a violation of semantic versioning.
   - documentation (1)
   - other (2)
   - workflows (1)
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 
 ## [0.1.9] - 2026-09-26
 
@@ -274,7 +283,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Package configured license files in gem release file lists.
 
-[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.9...HEAD
+[Unreleased]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.10...HEAD
+[0.1.10]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.9...v0.1.10
+[0.1.10t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.10
 [0.1.9]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.8...v0.1.9
 [0.1.9t]: https://github.com/kettle-dev/kettle-wash/releases/tag/v0.1.9
 [0.1.8]: https://github.com/kettle-dev/kettle-wash/compare/v0.1.7...v0.1.8
