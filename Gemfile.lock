@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    kettle-wash (0.1.11)
+    kettle-wash (0.1.12)
       version_gem (~> 1.1, >= 1.1.16)
 
 GEM
@@ -691,7 +691,7 @@ CHECKSUMS
   kettle-rb (0.1.18) sha256=28521523267e09c2616da73073b71cbffdf298a5f7d0399bec6429ab5db74217
   kettle-soup-cover (3.0.13) sha256=5dc72d8e35ca7cd0af642709b48d830205d295a9d534026a861a8ec3eb011372
   kettle-test (2.0.27) sha256=2f922b0353f378e5c7d1dbcba06464753df1d3e7b4fc7e29ed0109857229e9c8
-  kettle-wash (0.1.11)
+  kettle-wash (0.1.12)
   kramdown (2.5.2) sha256=1ba542204c66b6f9111ff00dcc26075b95b220b07f2905d8261740c82f7f02fa
   kramdown-parser-gfm (1.1.0) sha256=fb39745516427d2988543bf01fc4cf0ab1149476382393e0e9c48592f6581729
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
