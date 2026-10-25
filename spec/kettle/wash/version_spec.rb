@@ -6,10 +6,8 @@ RSpec.describe Kettle::Wash::Version do
   it_behaves_like "a Version module", described_class
 
   it "executes the version file for coverage without redefining constants" do
-    paths = [
-      File.expand_path("../../../lib/kettle/wash/version.rb", __dir__),
-      File.expand_path("../../../lib/kettle/wash/version_gem.rb", __dir__)
-    ].select { |path| File.file?(path) }
+    dir = File.expand_path("../../../lib/kettle/wash", __dir__)
+    paths = %w[version.rb version_gem.rb].map { |file| File.join(dir, file) }.select { |path| File.file?(path) }
     anonymous_namespace = AnonymousLoader.load(files: paths)
 
     expect(anonymous_namespace::Kettle::Wash::Version::VERSION).to eq(described_class::VERSION)
